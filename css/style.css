@@ -1,0 +1,12 @@
+:root {
+    --color-primary: #383e42;
+    --color-primary-shadow: rgba(104, 126, 134, 0.16);
+    --color-redish: #a23854;
+    --color-green: #3e967a;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-blue: #2f4a93;
+    --color-light-grey: #F7F7F7;
+    --button-radius: 35px;
+    --font-ubuntu: "Ubuntu", sans-serif;
+    --font-roboto-mono: "Roboto Mono", sans-serif;
