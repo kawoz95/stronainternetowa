@@ -85,7 +85,7 @@ const Services = ({name}) => {
 //pobrtanie kursu Euro z api i zapisanie w local storage
 
     try {
-      const resp = await fetch('http://api.nbp.pl/api/exchangerates/rates/A/EUR?format=json');
+      const resp = await fetch('https://api.nbp.pl/api/exchangerates/rates/A/EUR?format=json');
       const json = await resp.json();
 
       setResult({data: json, loading: false, error: null});
