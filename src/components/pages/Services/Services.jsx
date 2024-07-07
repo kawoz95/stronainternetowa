@@ -95,7 +95,7 @@ const Services = ({name}) => {
       setResult({data: null, loading: false, error: err});
     }
   }
- console.log("services");
+
   useEffect(() => {
     fetchExchangeRate();
   }, []);

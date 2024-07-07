@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const Home = () => (
   <main>
@@ -6,9 +7,10 @@ const Home = () => (
       <div className="opening__content">
         <h2 className="opening__header">Witaj!</h2>
         <p className="opening__heading">Otwórz bramę i przejrzyj naszą ofertę</p>
-        <a href="#" className="btn btn--primary btn--large">
-          Otwórz by zobaczyć więcej
-        </a>
+        {/*<a href="gallery" className="btn btn--primary btn--large">
+        </a>*/}
+          <Link to="/gallery"className="btn btn--primary btn--large">Otwórz by zobaczyć więcej</Link>
+
       </div>
     </section>
 

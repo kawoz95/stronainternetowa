@@ -117,7 +117,7 @@ h2 {
  */
 .opening {
     height: 560px;
-    background-image: url("../images/gate.jpg");
+    background-image: url("public/images/gate.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -133,7 +133,7 @@ h2 {
 }
 
 .opening__header {
-    font-family: var(--font-raleway);
+    font-family: var(--font-ubuntu);
     font-size: 3.0625rem;
 }
 
@@ -231,10 +231,6 @@ h2 {
     margin: 70px 0;
 }
 
-.offers__double {
-    --accent-color: var(--color-green);
-    display: flex;
-}
 
 .offers__double > div {
     margin-bottom: 0;
@@ -294,7 +290,7 @@ h2 {
     color: #8E9696;
 }
 .page_footer_nav_list a:hover {
-    color: var(--color-redish);
+
 }
 .name_footer {
     font-family: var(--font-roboto-mono);
@@ -420,13 +416,6 @@ h2 {
     background-color: var(--color-white);
     border: 1px solid var(--color-grey);
     border-radius: 4px;
-}
-
-.form__checkbox input:checked ~ .checkbox {
-    background-image: url(../assets/Checkmark.svg);
-    background-position: center;
-    background-size: 50%;
-    background-repeat: no-repeat;
 }
 
 .form__checkbox .consent__text {
