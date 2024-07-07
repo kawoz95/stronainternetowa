@@ -28,10 +28,17 @@ h2 {
 }
 
 /**
+ * Helpers primereact flex css
+ */
+.p-galleria-thumbnail-items-container {
+ background-color: var(--color-light-grey);
+}
+/**
  * Helpers
  */
 .container {
-    width: 1352px;
+    max-width: 1352px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -68,7 +75,7 @@ h2 {
 
 .header__container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     height: 100%;
 }
@@ -79,6 +86,7 @@ h2 {
 
 .nav__element {
     padding: 0 26px;
+    text-wrap: nowrap;
 }
 
 .nav__element:last-child {
@@ -110,7 +118,7 @@ h2 {
     font-size: 2rem;
     font-weight: 300;
     color: var(--color-primary);
-    margin-left: -200px;
+    /* margin-left: -200px; */
 }
 /**
  * Opening section
@@ -128,7 +136,7 @@ h2 {
 }
 
 .opening__content {
-    margin-top: 130px;
+    /* margin-top: 130px; */
     text-align: center;
 }
 
@@ -146,33 +154,35 @@ h2 {
  * Offers Section
  */
 .offers {
-    padding: 100px 0;
+    padding: 50px 0;
     background-color: var(--color-light-grey);
 }
 
 .offers__container {
-    padding: 0 100px;
+    /* padding: 0 100px; */
 }
 
 .offers__single {
     background-color: var(--color-white);
     border: 1px solid #E8E9ED;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 37px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
     border-radius: 5px;
+    margin: 30px;
 }
 
 .offers__text {
     box-sizing: content-box;
     max-width: 415px;
-    margin: 90px 36px;
+    /* margin: 90px 36px; */
 }
 
 .offers__text::after {
     content: "";
-    width: 335px;
+    max-width: 335px;
     height: 4px;
     background-color: var(--accent-color);
     display: block;
@@ -199,13 +209,13 @@ h2 {
 }
 
 .offers__single--brama .offers__image {
-    margin-right: 117px;
-    margin-bottom: 37px;
+    /* margin-right: 117px;
+    margin-bottom: 37px; */
 }
 
 
 .offers__single--brama .offers__image img {
-    width: 430px;
+    max-width: 430px;
     height: auto;
 
 }
@@ -214,21 +224,21 @@ h2 {
 .offers__single--balustrady {
     --accent-color: var(--color-primary);
     flex-direction: row-reverse;
-    padding: 0 20px 0 70px;
+    /* padding: 0 20px 0 70px; */
 }
 
 .offers__single--balustrady .offers__image {
-    margin-left: 30px;
-    margin-bottom: 17px;
+    /* margin-left: 30px;
+    margin-bottom: 17px; */
 }
 
 .offers__single--balustrady .offers__image img {
-    width: 430px;
+    max-width: 430px;
     height: auto;
 }
 
 .offers__single--balustrady .offers__text {
-    margin: 70px 0;
+    /* margin: 70px 0; */
 }
 
 .offers__double {
@@ -246,7 +256,7 @@ h2 {
 
 .offers__single--solo .offers__text {
     max-width: none;
-    margin: 70px 35px;
+    /* margin: 70px 35px; */
 }
 
 .offers__single--image {
@@ -260,9 +270,9 @@ h2 {
 }
 
 .offers__single--image img {
-    width: 430px;
+    max-width: 430px;
     height: auto;
-    margin-top: 55px;
+    /* margin-top: 55px; */
 }
 /** footer
 
@@ -301,12 +311,12 @@ h2 {
     font-size: 2rem;
     font-weight: 300;
     color: var(--color-primary);
-    margin-left: 1100px;
+    /* margin-left: 1100px; */
 }
 .logo_footer {
     width: 55px;
     height: 55px;
-    margin-right: 100px;
+    /* margin-right: 100px; */
 
 }
 /**
@@ -423,9 +433,9 @@ h2 {
 }
 
 .form__checkbox input:checked ~ .checkbox {
-    background-image: url(../assets/Checkmark.svg);
+    background-image: url(../images/logo_header.png);
     background-position: center;
-    background-size: 50%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -441,4 +451,51 @@ h2 {
     padding: 20px 97px;
     align-self: flex-end;
     margin-top: 20px;
+}
+
+
+.service-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.service-card h1 {
+    font-weight: bold;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.service-card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #a4a4a4;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+} 
+
+.service-card button[liked="true"] {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    /* background-color: #a4a4a4; */
+    background-color: #252525;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+} 
+
+.service-card button:hover {
+    opacity: 0.7;
 }
